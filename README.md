@@ -4,21 +4,23 @@ Examples and illustration of basic statistic concepts, probability distribution,
 ___
 ### Core Concepts
 | Concept                     | Comment |
-| Auto-correlation            | 
-| Law_ f Large Number         |
-| Central Limit Theorem       |
-| Confidence Interval         |
-| Gaussian Kernel             |
-| Kernel Density Estimation   |
-| Linear Regression           |
-| Monte Carlo Integration     |
-| Sum of Random Variables     |
-| Taylor Expansion            |
-| Universality of Uniform     |
+|-----------------------------|---------|
+| Auto-correlation            | |
+| Law_ f Large Number         | |
+| Central Limit Theorem       | |
+| Confidence Interval         | |
+| Gaussian Kernel             | |
+| Kernel Density Estimation   | |
+| Linear Regression           | |
+| Monte Carlo Integration     | |
+| Sum of Random Variables     | |
+| Taylor Expansion            | |
+| Universality of Uniform     | |
 
 ___
 ### Distribution
 | Name                      | Notebook |
+|---------------------------|----------|
 | Bernoulli                 | [Link](distribution/bernoulli.ipynb) |
 | Binomial                  | [Link](distribution/binomial.ipynb)
 | Geometric					| [Link](distribution/bernoulli.ipynb)

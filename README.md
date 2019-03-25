@@ -51,11 +51,36 @@ ___
 ### Visualization
 | Name              | Comments                                            | Notebook
 |-------------------|-----------------------------------------------------| --------------------------------------|
-| Matplotlib        | scatter, line chart, histogram, pie chart, subplots | [Link](visualization/matplotlib.ipynb)
-| Seaborn 			| scatter, violin-plot, pairwise correlation, heatmap | [Link](distribution/seaborn.ipynb)
+| Matplotlib basics | scatter, line chart, histogram, pie chart, subplots | [Link](visualization/matplotlib.ipynb)
+| Seaborn basics 	| scatter, violin-plot, pairwise correlation, heatmap | [Link](visualization/seaborn.ipynb)
 
 ___
 ### Simulation
+| Simulation Task                                             | Notebook |
+| Monty-Hall Problem: should I switch? 						  | [Link](simulation/monty_hall.ipynb)
+| Reservior Sampling										  | [Link](simulation/reservior_sampling.ipynb)
+| Using 7-sided die to roll 1~10 with equal probability  	  | [Link](simulation/7_sided_die.ipynb)
+| Using biased coin to similate unbiased coin 				  | [Link](simulation/biased_coin.ipynb)
+| Finding square root using Babylonian method				  | [Link](simulation/babylonian.ipynb)
+| Gender ratio of boy and girl 								  | [Link](simulation/gender_ratio.ipynb)
+| Probability of same birthdays 							  | [Link](simulation/birthday_problem.ipynb)
+| Combining normal distribution 							  | [Link](simulation/composite_normal.ipynb)
+| Conditional expectation 		 							  | [Link](simulation/conditional_expectation.ipynb)
+| Picking adjectives     		 							  | [Link](simulation/dating.ipynb)
+| Recapture wild animals 									  | [Link](simulation/recapture.ipynb)
+| Probability of forming triangle						      | [Link](simulation/triangle.ipynb)
+| Expected number of coin flips to get two heads			  | [Link](simulation/two_heads.ipynb)
+| Meaning of z-score 						     			  | [Link](simulation/z_core.ipynb)
 
 ___
 ### Statistical Tests
+| Name                                             | Notebook |
+|--------------------------------------------------|----------|
+| t-test basic example (left, right, two-tail)     | [Link](statistics_test/t_test_basic_example.ipynb)
+| t-test two-tailed (finches example)  			   | [Link](statistics_test/t_test_one_sample_two_tailed.ipynb)
+| t-test paired sample one-tailed 				   | [Link](statistics_test/t_test_paired_one_tailed.ipynb)
+| t-test paired sample two-tailed 				   | [Link](statistics_test/t_test_paired_two_tailed.ipynb)
+| t-test two sample two-tailed 				   	   | [Link](statistics_test/t_test_two_sampled_two_tailed.ipynb)
+| Chi-square goodness of fit test 				   | [Link](statistics_test/chi_squared_goodness_of_fit.ipynb)
+| Chi-square independence test    				   | [Link](statistics_test/chi_squared_independence_test.ipynb)
+| Analysis of variance (ANOVA)    				   | [Link](statistics_test/anova.ipynb)

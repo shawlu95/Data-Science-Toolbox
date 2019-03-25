@@ -57,6 +57,7 @@ ___
 ___
 ### Simulation
 | Simulation Task                                             | Notebook |
+|-------------------------------------------------------------|----------|
 | Monty-Hall Problem: should I switch? 						  | [Link](simulation/monty_hall.ipynb)
 | Reservior Sampling										  | [Link](simulation/reservior_sampling.ipynb)
 | Using 7-sided die to roll 1~10 with equal probability  	  | [Link](simulation/7_sided_die.ipynb)

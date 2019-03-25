@@ -30,3 +30,32 @@ ___
 | Logistic					| [Link](distribution/logistic.ipynb)
 | t-distribution			| [Link](distribution/t_distribution.ipynb)
 | Chi-square				| [Link](distribution/chi_square.ipynb)
+
+___
+### Formula & Proof
+| Name                      | Notebook |
+|---------------------------|----------|
+| Common distributions      | [Link](distribution/distribution.pdf)
+| Gaussian error function   | [Link](distribution/gaussian_erf.pdf)
+| Integrating Gaussian      | [Link](distribution/integrate_Gaussian.pdf)
+| Markove Inequality        | [Link](distribution/markov_inequality.pdf)
+
+___
+### Preprocessing
+| Name                                  | Notebook |
+|---------------------------------------|----------|
+| Smoothing time series                 | [Link](preprocessing/smoothing.ipynb)
+| Exponential smoothing time series     | [Link](preprocessing/exponential_smoothing.ipynb)
+
+___
+### Visualization
+| Name              | Comments                                            | Notebook
+|-------------------|-----------------------------------------------------| --------------------------------------|
+| Matplotlib        | scatter, line chart, histogram, pie chart, subplots | [Link](visualization/matplotlib.ipynb)
+| Seaborn 			| scatter, violin-plot, pairwise correlation, heatmap | [Link](distribution/seaborn.ipynb)
+
+___
+### Simulation
+
+___
+### Statistical Tests

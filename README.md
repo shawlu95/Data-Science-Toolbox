@@ -1,4 +1,4 @@
-# Data_Science_Toolbox
+# Data Science Toolbox
 Examples and illustration of basic statistic concepts, probability distribution, Monte Carlo simulation, preprocessing and visualization techniques, and statistical testing.
 
 ___
@@ -35,10 +35,10 @@ ___
 ### Formula & Proof
 | Name                      | Notebook |
 |---------------------------|----------|
-| Common distributions      | [Link](distribution/distribution.pdf)
-| Gaussian error function   | [Link](distribution/gaussian_erf.pdf)
-| Integrating Gaussian      | [Link](distribution/integrate_Gaussian.pdf)
-| Markove Inequality        | [Link](distribution/markov_inequality.pdf)
+| Common distributions      | [Link](cheatsheet/distribution.pdf)
+| Gaussian error function   | [Link](cheatsheet/gaussian_erf.pdf)
+| Integrating Gaussian      | [Link](cheatsheet/integrate_Gaussian.pdf)
+| Markove Inequality        | [Link](cheatsheet/markov_inequality.pdf)
 
 ___
 ### Preprocessing

@@ -3,25 +3,26 @@ Examples and illustration of basic statistic concepts, probability distribution,
 
 ___
 ### Core Concepts
-| Concept                     | Comment |
+| Concept                     | Notebook |
 |-----------------------------|---------|
-| Auto-correlation            | |
-| Law_ f Large Number         | |
-| Central Limit Theorem       | |
-| Confidence Interval         | |
-| Gaussian Kernel             | |
-| Kernel Density Estimation   | |
-| Linear Regression           | |
-| Monte Carlo Integration     | |
-| Sum of Random Variables     | |
-| Taylor Expansion            | |
-| Universality of Uniform     | |
+| Auto-correlation            | [Link](concepts/auto_correlation.ipynb)
+| Entropy and Impurity		  | [Link](concepts/gini_impurity&entropy.ipynb)
+| Law of Large Number         | [Link](concepts/law_of_large_number.ipynb)
+| Central Limit Theorem       | [Link](concepts/central_limit_theorem.ipynb)
+| Confidence Interval         | [Link](concepts/confidence_interval.ipynb)
+| Gaussian Kernel             | [Link](concepts/Gaussian_kernel.ipynb)
+| Kernel Density Estimation   | [Link](concepts/kernel_density_estimation.ipynb)
+| Linear Regression           | [Link](concepts/linear_regression.ipynb)
+| Monte Carlo Integration     | [Link](concepts/monte_carlo_integration.ipynb)
+| Sum of Random Variables     | [Link](concepts/sum_of_idd_random_vars.ipynb)
+| Taylor Expansion            | [Link](concepts/Taylor_expansion.ipynb)
+| Universality of Uniform     | [Link](concepts/universality_of_uniform.ipynb)
 
 ___
 ### Distribution
 | Name                      | Notebook |
 |---------------------------|----------|
-| Bernoulli                 | [Link](distribution/bernoulli.ipynb) |
+| Bernoulli                 | [Link](distribution/bernoulli.ipynb)
 | Binomial                  | [Link](distribution/binomial.ipynb)
 | Geometric					| [Link](distribution/bernoulli.ipynb)
 | Exponential				| [Link](distribution/exponential.ipynb)

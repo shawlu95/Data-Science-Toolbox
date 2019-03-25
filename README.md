@@ -24,7 +24,7 @@ ___
 |---------------------------|----------|
 | Bernoulli                 | [Link](distribution/bernoulli.ipynb)
 | Binomial                  | [Link](distribution/binomial.ipynb)
-| Geometric					| [Link](distribution/bernoulli.ipynb)
+| Geometric					| [Link](distribution/geometric.ipynb)
 | Exponential				| [Link](distribution/exponential.ipynb)
 | Poisson					| [Link](distribution/poisson.ipynb)
 | Logistic					| [Link](distribution/logistic.ipynb)

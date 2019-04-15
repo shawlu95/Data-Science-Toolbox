@@ -1,0 +1,18 @@
+# conda env create -f gemsec_env.yml
+# conda env update -f gemsec_env.yml
+# conda remove --gemsec_env test_env --all
+name: gemsec
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - python=3.5
+  - networkx=1.11
+  - tqdm=4.19.5
+  - numpy=1.13.3
+  - pandas=0.20.3
+  - tensorflow
+  - jsonschema=2.6.0
+  - texttable
+  - python-louvain=0.11
+  - scikit-learn

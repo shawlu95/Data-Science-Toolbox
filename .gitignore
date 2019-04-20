@@ -5,3 +5,4 @@ outputs/
 unix/
 master/
 tf_logs/
+datasets/

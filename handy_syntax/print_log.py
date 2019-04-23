@@ -1,9 +1,8 @@
-import sys
+import sys, os
 
 sys.stdout = open("outputs/out.txt","a")
 print("this is a log message")
 
-sys.stdout.close()
-
 # cannot do this:
+# sys.stdout.close()
 # print("done")

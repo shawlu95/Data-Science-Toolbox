@@ -8,3 +8,4 @@ tf_logs/
 datasets/
 us_department_of_labor/
 credentials.py
+__pycache__/

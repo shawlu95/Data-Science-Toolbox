@@ -1,5 +1,6 @@
 .DS_Store
 .ipynb_checkpoints/
+.idea/
 .idea/vcs.xml
 doc/
 outputs/
@@ -12,3 +13,4 @@ credentials.py
 __pycache__/
 algorithm/.idea/workspace.xml
 *.xml
+algorithm/.idea/workspace.xml

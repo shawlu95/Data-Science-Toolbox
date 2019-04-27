@@ -3,6 +3,7 @@
 .idea/
 .idea/vcs.xml
 doc/
+inputs/
 outputs/
 unix/
 master/

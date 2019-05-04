@@ -4,6 +4,29 @@ class TreeNode:
         self.left = None
         self.right = None
 
+# cleaner code than solution
+class Solution:
+    def buildTree(self, preorder: List[int], inorder: List[int]) -> TreeNode:
+        """
+        For any node in inorder, its left hand side are in left subtree, vice versa for right hand side.
+        Traverse the tree in preorder. Every time a node is dequeued from preorder sequence, find from the inorder sequence what goes left and what goes right (end index exclusive)
+        """
+
+        def buildNode(i, j):
+            # base case
+            if i == j: return None
+
+            parent = TreeNode(preorder.pop(0))
+            splitIdx = inorder.index(parent.val)
+
+            parent.left = buildNode(i, splitIdx)
+            parent.right = buildNode(splitIdx + 1, j)
+
+            return parent
+
+        return buildNode(0, len(preorder))
+
+
 class Solution:
     def buildTree(self, preorder, inorder):
         """

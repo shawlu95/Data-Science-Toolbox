@@ -1,7 +1,6 @@
 ## Data Science Toolbox
 Examples and illustration of basic statistic concepts, probability distribution, Monte Carlo simulation, preprocessing and visualization techniques, and statistical testing.
 
-### Directory
 This repo is divided into multiple sections. Each section focuses on a group of concept, operation, or data science toolkit. A brief summary is presented below (in alphabetical order):
 * **[algorithm](./algorithm)**: rudimentary algorithm and data structure, using LeetCode problems for practice. Solutions are provided and commented. Problems are grouped by subjects (BFS, DFS, tree etc.).
 * **[case_study](./case_study)**: small datasets that exemplifies regression/classification workflow, from data cleaning to feature engineering, modeling, training, evaluation etc.

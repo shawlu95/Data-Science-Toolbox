@@ -1,0 +1,27 @@
+# environment for scikit-learn, xgboost, data exploration
+
+# conda env create -f analytics.yml
+# conda env update -f analytics.yml
+# conda remove --name analytics --all
+name: analytics
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyter
+  - seaborn
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - scikit-learn
+  # - lightgbm
+  # - py-xgboost
+  - shap
+  - eli5
+  - pydot
+  - plotly
+  - matplotlib
+  - sympy
+  - sqlalchemy
+  - mysqlclient

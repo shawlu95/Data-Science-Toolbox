@@ -1,0 +1,16 @@
+# environemnt for tensorflow and keras
+# conda env create -f deep.yml
+# conda env update -f deep.yml
+# conda remove --name deep --all
+name: deep
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - jupyter
+  - tensorflow
+  - tensorboard
+  - gym
+  - matplotlib
+  - h5py
+  - pyyaml

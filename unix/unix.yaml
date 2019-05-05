@@ -1,0 +1,61 @@
+# download anaconda3
+# tutorial: https://medium.com/@alexjsanchez/python-3-notebooks-on-aws-ec2-in-15-mostly-easy-steps-2ec5e662c6c6
+wget https://repo.continuum.io/archive/Anaconda3-4.4.0-Linux-x86_64.sh
+bash Anaconda3-4.4.0-Linux-x86_64.sh
+
+# ------------------------------------------------------------
+# ------------------ END POINTS -------------------------------
+# AWS DNS: each time you restart AWS EC2 instance, replace the following DNS in all occurence in current file so that you can simply copy-paste command in terminal
+ec2-54-146-186-117.compute-1.amazonaws.com
+
+# ------------------------------------------------------------
+# ----------------- LOGIN AWS --------------------------------
+# secure private key
+chmod 400 data_science.pem
+
+# navigate to the folder containing the pem file. SSH into AWS instance
+ssh -i data_science.pem ec2-user@ec2-54-146-186-117.compute-1.amazonaws.com
+
+# activate jupyter notebook
+jupyter notebook
+
+# loginto jupyter notebook, enter password 8888
+https://ec2-54-146-186-117.compute-1.amazonaws.com:8888/
+
+# the sha1 string for the current jupyte rnotebook password '8888':
+'sha1:0bc6079d1c65:d87708b5f91c1749dfe767c09a2f54e037b53f19'
+
+# ------------------------------------------------------------
+# Azure
+ssh shaw@40.117.212.162
+
+ssh -L 8080:localhost:8888 shaw@40.117.212.162
+
+jupyter notebook --no-browser
+
+jupyter notebook --no-browser --notebook-dir=/target
+
+# zip
+zip -r archive.zip notebooks
+
+# UPLOAD
+scp /Users/shawlu/Documents/CS224N/squad/layers_rnet.py syl2vec@104.211.27.41:/home/syl2vec/squad/layers_rnet.py
+
+# DOWNLOAD
+scp syl2vec@104.211.27.41:/home/syl2vec/squad/save_raw.zip /Users/shawlu/Documents/CS224N/squad/save_raw.zip
+
+# shut down
+python3 train.py -n BiDAF_char && sudo poweroff
+
+# upload to farm machine
+scp -r proj1.zip xiaolu@cardinal.stanford.edu:~/Documents/CS142/
+
+# submit in farm machine
+/usr/class/cs142/bin/submit
+
+# activate tensorboard
+tensorboard --logdir tf_logs/
+http://Shaws-MacBook-Pro.local:6006
+
+# remove all DS Store file
+find . -name ".DS_Store" -delete

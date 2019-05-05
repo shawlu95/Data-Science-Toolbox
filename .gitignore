@@ -5,7 +5,7 @@
 doc/
 inputs/
 outputs/
-unix/
+*.pem
 master/
 tf_logs/
 datasets/

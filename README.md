@@ -20,6 +20,7 @@ ___
 | Confidence Interval         | [Link](concepts/confidence_interval.ipynb)
 | Credible Interval           | [Link](concepts/credible_interval.ipynb)
 | Loss (L0, L1, L2)           | [Link](concepts/loss.ipynb)
+| Gradient descent            | [Link](concepts/gradient_descent.ipynb)
 
 ___
 ### Probability Distribution
@@ -41,7 +42,8 @@ ___
 | Common distributions      | [Link](cheatsheet/distribution.pdf)
 | Gaussian error function   | [Link](cheatsheet/gaussian_erf.pdf)
 | Integrating Gaussian      | [Link](cheatsheet/integrate_Gaussian.pdf)
-| Markove Inequality        | [Link](cheatsheet/markov_inequality.pdf)
+| Markov Inequality         | [Link](cheatsheet/markov_inequality.pdf)
+| Statistical testing       | [Link](cheatsheet/statistical_test.pdf)
 
 ___
 ### Preprocessing
@@ -79,9 +81,10 @@ ___
 | Simulation Task                                             | Notebook |
 |-------------------------------------------------------------|----------|
 | Monty-Hall Problem: should I switch? 						            | [Link](simulation/monty_hall.ipynb)
-| Reservior Sampling										                      | [Link](simulation/reservior_sampling.ipynb)
+| Reservoir Sampling										                      | [Link](simulation/reservior_sampling.ipynb)
+| Throw a fair dice 6 times. Roll some number exactly 4 times | [Link](simulation/6_throw_dice.ipynb)
 | Using 7-sided die to roll 1~10 with equal probability  	    | [Link](simulation/7_sided_die.ipynb)
-| Using biased coin to similate unbiased coin 				        | [Link](simulation/biased_coin.ipynb)
+| Using biased coin to simulate unbiased coin 				        | [Link](simulation/biased_coin.ipynb)
 | Finding square root using Babylonian method				          | [Link](simulation/babylonian.ipynb)
 | Gender ratio of boy and girl 								                | [Link](simulation/gender_ratio.ipynb)
 | Probability of same birthdays 							                | [Link](simulation/birthday_problem.ipynb)
@@ -92,6 +95,10 @@ ___
 | Probability of forming triangle						                  | [Link](simulation/triangle.ipynb)
 | Expected number of coin flips to get two heads			        | [Link](simulation/two_heads.ipynb)
 | Meaning of z-score 						     			                    | [Link](simulation/z_core.ipynb)
+| Calculating Pi with Monte Carlo simulation                  | [Link](simulation/finding_pi.ipynb)
+| Function of expectation vs. expectation of function         | [Link](simulation/function_of_expectation.ipynb)
+| Random walk                                                 | [Link](simulation/random_walk.ipynb)
+| Roulette                                                    | [Link](simulation/roulette.ipynb)
 
 ___
 ### Statistical Tests

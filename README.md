@@ -18,6 +18,8 @@ ___
 | Taylor Expansion            | [Link](concepts/Taylor_expansion.ipynb)
 | Universality of Uniform     | [Link](concepts/universality_of_uniform.ipynb)
 | Confidence Interval         | [Link](concepts/confidence_interval.ipynb)
+| Credible Interval           | [Link](concepts/credible_interval.ipynb)
+| Loss (L0, L1, L2)           | [Link](concepts/loss.ipynb)
 
 ___
 ### Distribution

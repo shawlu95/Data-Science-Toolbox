@@ -52,41 +52,76 @@ class Solution2:
                             du.union(r * nc + c, candr * nc + candc)
         return du.count
 
-
+# clean solution
 class Solution(object):
     def numIslands(self, grid):
         """
         :type grid: List[List[str]]
         :rtype: int
+        edge case: [], [[]]
         """
-        if not grid:
-            return 0
-        nrows = len(grid)
-        ncols = len(grid[0])
+        nrow = len(grid)
+        if nrow == 0: return 0
+        ncol = len(grid[0])
 
-        n = 0
-        for r in range(nrows):
-            for c in range(ncols):
+        inBound = lambda r, c: 0 <= r and r < nrow and 0 <= c and c < ncol
+        def bfs(r, c):
+            queue = [(r, c)]
+
+            # left, up, right, down
+            steps = [(-1, 0), (0, 1), (1, 0), (0, -1)]
+
+            grid[r][c] = "0" # mark starter node
+            while queue:
+                r, c = queue.pop(0) # pop left
+                for dr, dc in steps:
+                    rr, cc = r + dr, c + dc
+                    if inBound(rr, cc) and grid[rr][cc] == "1":
+                        grid[rr][cc] = "0" # mark before appending, to avoid revisiting
+                        queue.append((rr, cc))
+
+        nlands = 0
+        for r in range(nrow):
+            for c in range(ncol):
                 if grid[r][c] == "1":
-                    n += 1
-
-                    queue = []
-                    queue.append((r, c))
-                    while queue:
-                        print(queue)
-                        node = queue.pop(0)
-                        grid[node[0]][node[1]] = "0"
-                        if node[0] - 1 >= 0 and grid[node[0] - 1][node[1]] == '1' and (node[0] - 1, node[1]) not in queue:
-                            queue.append((node[0] - 1, node[1]))
-                        if node[0] + 1 < nrows and grid[node[0] + 1][node[1]] == '1' and (node[0] + 1, node[1]) not in queue:
-                            queue.append((node[0] + 1, node[1]))
-                        if node[1] - 1 >= 0 and grid[node[0]][node[1] - 1] == '1' and (node[0], node[1] - 1) not in queue:
-                            queue.append((node[0], node[1] - 1))
-                        if node[1] + 1 < ncols and grid[node[0]][node[1] + 1] == '1' and (node[0], node[1] + 1) not in queue:
-                            queue.append((node[0], node[1] + 1))
-
-        print(n)
-        return n
+                    nlands += 1
+                    bfs(r, c)
+        return nlands
+# verbose solution, no code refactoring
+# class Solution(object):
+#     def numIslands(self, grid):
+#         """
+#         :type grid: List[List[str]]
+#         :rtype: int
+#         """
+#         if not grid:
+#             return 0
+#         nrows = len(grid)
+#         ncols = len(grid[0])
+#
+#         n = 0
+#         for r in range(nrows):
+#             for c in range(ncols):
+#                 if grid[r][c] == "1":
+#                     n += 1
+#
+#                     queue = []
+#                     queue.append((r, c))
+#                     while queue:
+#                         print(queue)
+#                         node = queue.pop(0)
+#                         grid[node[0]][node[1]] = "0"
+#                         if node[0] - 1 >= 0 and grid[node[0] - 1][node[1]] == '1' and (node[0] - 1, node[1]) not in queue:
+#                             queue.append((node[0] - 1, node[1]))
+#                         if node[0] + 1 < nrows and grid[node[0] + 1][node[1]] == '1' and (node[0] + 1, node[1]) not in queue:
+#                             queue.append((node[0] + 1, node[1]))
+#                         if node[1] - 1 >= 0 and grid[node[0]][node[1] - 1] == '1' and (node[0], node[1] - 1) not in queue:
+#                             queue.append((node[0], node[1] - 1))
+#                         if node[1] + 1 < ncols and grid[node[0]][node[1] + 1] == '1' and (node[0], node[1] + 1) not in queue:
+#                             queue.append((node[0], node[1] + 1))
+#
+#         print(n)
+#         return n
 
 solver = Solution()
 solver.numIslands([["1","1","1","1","0"],

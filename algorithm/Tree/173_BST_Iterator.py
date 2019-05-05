@@ -5,6 +5,58 @@
 #         self.left = None
 #         self.right = None
 
+# dumb
+# Definition for a binary tree node.
+# class TreeNode(object):
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class BSTIterator(object):
+
+    def __init__(self, root):
+        """
+        :type root: TreeNode
+        """
+        self.cur = 0
+        arr = []
+        stack = []
+        node = root
+        while stack or node:
+            while node:
+                stack.append(node)
+                node = node.left
+
+            node = stack.pop()
+
+            # do something
+            arr.append(node)
+
+            node = node.right
+
+        self.arr = arr
+
+    def next(self):
+        """
+        @return the next smallest number
+        :rtype: int
+        """
+        if self.hasNext():
+            idx = self.cur
+            self.cur += 1
+            return self.arr[idx].val
+        return
+
+    def hasNext(self):
+        """
+        @return whether we have a next smallest number
+        :rtype: bool
+        """
+        return self.cur < len(self.arr)
+
+
+# smart
 class BSTIterator(object):
     def __init__(self, root):
         """

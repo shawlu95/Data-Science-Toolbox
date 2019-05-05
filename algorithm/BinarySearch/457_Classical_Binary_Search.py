@@ -9,7 +9,7 @@ class Solution:
         # write your code here
         l, h = 0, len(nums) - 1
         def rec(nums, l, h, t):
-            if h < l:
+            if h < l: # do not break when l == h
                 return -1
             m = (l + h) // 2
             mid_num = nums[m]

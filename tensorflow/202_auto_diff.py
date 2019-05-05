@@ -1,6 +1,5 @@
 import tensorflow as tf
 
-# tf.enable_eager_execution() # deprecated
 tf.compat.v1.enable_eager_execution()
 
 # ___

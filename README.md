@@ -6,7 +6,7 @@ ___
 | Concept                     | Notebook |
 |-----------------------------|---------|
 | Auto-correlation            | [Link](concepts/auto_correlation.ipynb)
-| Entropy and Impurity		  | [Link](concepts/gini_impurity&entropy.ipynb)
+| Entropy and Impurity		    | [Link](concepts/gini_impurity&entropy.ipynb)
 | Law of Large Number         | [Link](concepts/law_of_large_number.ipynb)
 | Central Limit Theorem       | [Link](concepts/central_limit_theorem.ipynb)
 | Confidence Interval         | [Link](concepts/confidence_interval.ipynb)
@@ -17,6 +17,7 @@ ___
 | Sum of Random Variables     | [Link](concepts/sum_of_idd_random_vars.ipynb)
 | Taylor Expansion            | [Link](concepts/Taylor_expansion.ipynb)
 | Universality of Uniform     | [Link](concepts/universality_of_uniform.ipynb)
+| Confidence Interval         | [Link](concepts/confidence_interval.ipynb)
 
 ___
 ### Distribution

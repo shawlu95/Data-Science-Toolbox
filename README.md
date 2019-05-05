@@ -22,7 +22,7 @@ ___
 | Loss (L0, L1, L2)           | [Link](concepts/loss.ipynb)
 
 ___
-### Distribution
+### Probability Distribution
 | Name                      | Notebook |
 |---------------------------|----------|
 | Bernoulli                 | [Link](distribution/bernoulli.ipynb)
@@ -47,15 +47,32 @@ ___
 ### Preprocessing
 | Name                                  | Notebook |
 |---------------------------------------|----------|
+| Dropping missing value (Pandas)       | [Link](preprocessing/drop_missing_values.ipynb)
+| Imputing missing values (Pandas)      | [Link](preprocessing/impute_missing_values.ipynb)
+| One-hot encoding                      | [Link](preprocessing/one_hot_encoding.ipynb)
+| Pandas tricks                         | [Link](preprocessing/pandas_basics.ipynb)
+| Pandas SQL                            | [Link](preprocessing/pandasql.ipynb)
+| Sklearn pipeline                      | [Link](preprocessing/pipeline.ipynb)
+| Standardizing dataframe               | [Link](preprocessing/standardize.ipynb)
+| Moving average (Pandas)               | [Link](preprocessing/moving_average.ipynb)
 | Smoothing time series                 | [Link](preprocessing/smoothing.ipynb)
 | Exponential smoothing time series     | [Link](preprocessing/exponential_smoothing.ipynb)
+| Calling API                           | [Link](preprocessing/api_call.ipynb)
 
 ___
 ### Visualization
 | Name              | Comments                                            | Notebook
 |-------------------|-----------------------------------------------------| --------------------------------------|
-| Matplotlib basics | scatter, line chart, histogram, pie chart, subplots | [Link](visualization/matplotlib.ipynb)
-| Seaborn basics 	| scatter, violin-plot, pairwise correlation, heatmap | [Link](visualization/seaborn.ipynb)
+| Matplotlib basics | Scatter, line chart, histogram, pie chart, subplots | [Link](visualization/matplotlib.ipynb)
+| Pyplot gradient   | Gradient plot with matplotlib                       | [Link](visualization/matplotlib.ipynb)
+| Seaborn basics 	  | Scatter, violin-plot, pairwise correlation, heatmap | [Link](visualization/seaborn.ipynb)
+| ggplot basics     | Emulating R's ggplot                                | [Link](visualization/ggplot.ipynb)
+| plotly basics     | Sample use case of plotly API                       | [Link](visualization/plotly_basics.ipynb)
+| pylab table       | Printing table with pylab                           | [Link](visualization/pylab_table.ipynb)
+| imageio basics    | Animation with imageio                              | [Link](visualization/imageio.ipynb)
+| FuncAnimation     | Animation with Matplotlib                           | [Link](visualization/FuncAnimation.ipynb)
+| Graphics          | Include images, GIF using markdown and HTML         | [Link](visualization/include_image.ipynb)
+| Math              | Math symbol in markdown, all greek letters          | [Link](visualization/math_symbol.ipynb)
 
 ___
 ### Simulation

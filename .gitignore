@@ -1,7 +1,5 @@
 .DS_Store
 .ipynb_checkpoints/
-.idea/
-.idea/vcs.xml
 doc/
 inputs/
 outputs/
@@ -11,6 +9,4 @@ tf_logs/
 datasets/
 us_department_of_labor/
 credentials.py
-__pycache__/
 *.xml
-algorithm/.idea/workspace.xml

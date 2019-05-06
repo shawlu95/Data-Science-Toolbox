@@ -60,17 +60,15 @@ class Solution(object):
         :rtype: int
         edge case: [], [[]]
         """
-        nrow = len(grid)
-        if nrow == 0: return 0
-        ncol = len(grid[0])
+        # use for loop to implicitly handle edge case
+        # nrow = len(grid)
+        # if nrow == 0: return 0
+        # ncol = len(grid[0])
 
-        inBound = lambda r, c: 0 <= r and r < nrow and 0 <= c and c < ncol
         def bfs(r, c):
             queue = [(r, c)]
-
-            # left, up, right, down
-            steps = [(-1, 0), (0, 1), (1, 0), (0, -1)]
-
+            steps = [(-1, 0), (0, 1), (1, 0), (0, -1)] # left, up, right, down
+            inBound = lambda r, c: 0 <= r < len(grid) and 0 <= c < len(grid[0])
             grid[r][c] = "0" # mark starter node
             while queue:
                 r, c = queue.pop(0) # pop left
@@ -79,14 +77,14 @@ class Solution(object):
                     if inBound(rr, cc) and grid[rr][cc] == "1":
                         grid[rr][cc] = "0" # mark before appending, to avoid revisiting
                         queue.append((rr, cc))
-
         nlands = 0
-        for r in range(nrow):
-            for c in range(ncol):
+        for r in range(len(grid)):
+            for c in range(len(grid[0])):
                 if grid[r][c] == "1":
                     nlands += 1
                     bfs(r, c)
         return nlands
+
 # verbose solution, no code refactoring
 # class Solution(object):
 #     def numIslands(self, grid):

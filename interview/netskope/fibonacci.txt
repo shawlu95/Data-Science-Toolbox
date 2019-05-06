@@ -1,0 +1,254 @@
+
+
+
+
+
+Python 3 environment ready. Hit run to try out some code!
+Python 3.6.7
+
+>>>
+
+>>> # Great. You're doing very well. Keep it up.  I'll just watch :)
+
+>>>
+
+Shaw ran 136 lines of Python 3 (finished in 1.70s):
+
+  File "/home/coderpad/solution.py", line 105
+    for ... :
+            ^
+SyntaxError: invalid syntax
+
+
+>>>
+
+Shaw ran 137 lines of Python 3 (finished in 1.51s):
+
+  File "/home/coderpad/solution.py", line 133
+    print("Here's my solution:")
+    ^
+IndentationError: unexpected indent
+
+
+>>>
+
+Shaw ran 136 lines of Python 3 (finished in 1.79s):
+
+Traceback (most recent call last):
+  File "/home/coderpad/solution.py", line 132, in <module>
+    main()
+  File "/home/coderpad/solution.py", line 108, in main
+    print(F(0), F[1], F[2], F[3])
+TypeError: 'function' object is not subscriptable
+
+
+>>>
+
+Shaw ran 136 lines of Python 3 (finished in 1.73s):
+
+0 1 1 2
+
+>>>
+
+Shaw ran 140 lines of Python 3 (finished in 1.59s):
+
+
+>>>
+
+Shaw ran 137 lines of Python 3 (finished in 1.87s):
+
+  File "/home/coderpad/solution.py", line 100
+    def main():
+      ^
+SyntaxError: invalid syntax
+
+
+>>>
+
+Shaw ran 137 lines of Python 3 (finished in 1.93s):
+
+
+>>>
+
+Shaw ran 143 lines of Python 3 (finished in 2.57s):
+
+
+>>> # Yes, so now it is time to optimize a bit...
+
+>>> # it's possible to call the F function only once.
+
+>>> # Yes, you need to apply dynamic prog or simple memoization
+
+>>> # let me check the index a bit..
+
+>>>
+
+Shaw ran 157 lines of Python 3 (finished in 1.51s):
+
+
+>>> # no compile error
+
+>>> # try some simple cases
+
+>>>
+
+Shaw ran 157 lines of Python 3 (finished in 2.19s):
+
+2
+
+>>>
+
+Shaw ran 157 lines of Python 3 (finished in 1.74s):
+
+7
+
+>>>
+
+Shaw ran 157 lines of Python 3 (finished in 1.86s):
+
+12
+
+>>>
+
+Shaw ran 158 lines of Python 3 (finished in 1.57s):
+
+
+>>>
+
+Shaw ran 162 lines of Python 3 (finished in 1.69s):
+
+
+>>> # lookking good so far
+
+>>> # try more exrtreme cases
+
+>>>
+
+Shaw ran 164 lines of Python 3 (finished in 1.72s):
+
+
+>>>
+
+Shaw ran 165 lines of Python 3 (finished in 1.75s):
+
+
+>>> # run time does not explode
+
+>>> # try more extreme cases'
+
+>>>
+
+Shaw ran 165 lines of Python 3 (finished in 10.02s):
+
+Python 3.6.7
+
+>>> # hit a ceiling
+
+>>> # let me check time comlexity
+
+>>> # we calculated two Fibonacci number in a single pass
+
+>>> # not two number
+
+>>> # running total between two indices in a single pass
+
+>>> # time complexity is O(n), n being the ending index (larger Fibo numb
+... er)
+
+>>> # memory complexity is O(1). We are not using any array to store thin
+... gs.
+
+>>> # I'd say this is an efficient implementation.
+
+>>> # #let me try more edge cases
+
+>>>
+
+Shaw ran 170 lines of Python 3 (finished in 2.31s):
+
+
+>>> # very nice! ok.  I have one more Q:
+
+>>> # What would you do to test something like this even better?
+
+>>> # Rather what could you do?
+
+>>> # Python offer unittest, which separates testing modules from the sou
+... rce code
+
+>>> # it makes the testing process cleaner
+
+>>> # this is helpful for enginneers to keep their workspace clean and we
+... ll-organized
+
+>>> # more edge cases may exist, which is hard to enumerate in 45 minutes
+...
+
+>>> # so we can use try... except... to catch exception, if an error is t
+... hrown. Save error and log to a file or DB. for engineers to resolve.
+
+>>> # I have also assumed m < n, which may not be the case. So let me add
+...  a qwuick sheck to swap them if necessary.
+
+>>>
+
+Shaw ran 175 lines of Python 3 (finished in 1.82s):
+
+
+>>> # did I answer your question?
+
+>>> # pretty much yes.   This particular problem is (deliberately) very s
+... imple.
+
+>>> # In the more general complex case, is there anything else you could
+
+>>> # do to improve the coverage/correctness?
+
+>>> # I mean a more general testing strategy...
+
+>>> # In terms of methodology, I can only think of exception handler (try
+...  ... except) and unittesting for now.
+
+>>> # in terms of correctness, the bottleneck is that we need a "correct"
+...  implementation of the task to compare to.
+
+>>> # there may exist an older, less efficient implementation, which is k
+... nown to be correct.
+
+>>> # then we can compare the old implementation against the new, in a un
+... ittest module, and check if they output the same result.
+
+>>> # when number gets large, variable may even overflow. So it's also ne
+... cessary to check when the algorithm break.
+
+>>> # we should have an idea of how far it can go (64 bit integer, 36 bit
+...  etc).
+
+>>> # the limit of the algorithm should match that of requirement, howeve
+... r. If the production environment only stresses the limit to 16 bit in
+... teger, then there's no need to implement a 64 bit version.
+
+>>> # so in summary: (1) to check correctness we need soem "correct" vers
+... ion to compare against, not just enumerate some cases; (2) the algori
+... thm should meet the upper limit that production env imposes, but not
+... go much further.
+
+>>> # Ok Shaw,
+...
+... # We are out of time so we'll have to stop here.
+... # Thanks so much for all your time today.
+... # You did well and it was a pleasure to watch you work.
+... # Have a wonderful rest of the week!
+...
+...
+
+>>> Thank you Ariel!
+  File "<ipython-input-15-d28a592742d3>", line 1
+    Thank you Ariel!
+            ^
+SyntaxError: invalid syntax
+
+
+>>> ##  have a great day!
+
+>>> 

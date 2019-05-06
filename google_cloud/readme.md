@@ -1,4 +1,6 @@
 ### Introduction to Google Cloud Platform
+This course offers a brief overview of Google Cloud Platform. The objective is to understand what each cloud service does, and its counterpart in AWS.
+
 #### Innovation
 * White paper: MapReduce, Google File System, Colossus.
 * Open source: Kubernetes.

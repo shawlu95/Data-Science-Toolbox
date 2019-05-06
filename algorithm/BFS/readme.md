@@ -28,4 +28,12 @@ def bfs(grid, r, c):
 ```
 
 ### Primer
+* Plain vanilla BFS, flood fill image [[733](733_Flood_Fill.py)].
 * Find contiguous block in matrix [[200](200_Number_of_Islands.py)].
+
+### Classic
+* Word Ladder [[127](127_Word_Ladder.py)].
+* Word Ladder II [[126](126_Word_Ladder_II.py)].
+
+### Obscure
+* Use node to store additional information (depth, search range) [[655](655_Print_Binary_Tree.py)].

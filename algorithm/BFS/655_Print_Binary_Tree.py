@@ -10,22 +10,22 @@ class Solution:
         :rtype: List[List[str]]
         """
         nrows = self.height(root)
-        ncols = 2 ** nrows - 1
+        ncols = 2 ** nrows - 1 # always odd
         ret = [[""] * ncols for x in range(nrows)]
 
         bfs = [(root, 0, 0, ncols)]
         while bfs:
-            # i: depth
+            # d: depth
             # l:r : range allocated for current node
-            node, i, l, r = bfs.pop(0)
+            node, d, l, r = bfs.pop(0)
 
-            j = (r + l) // 2
+            m = (r + l) // 2
 
-            ret[i][j] = str(node.val)
+            ret[i][m] = str(node.val)
 
             if node.left:
-                bfs.append((node.left, i + 1, l, j))
+                bfs.append((node.left, d + 1, l, m))
             if node.right:
-                bfs.append((node.right, i + 1, j, r))
+                bfs.append((node.right, d + 1, m, r))
 
         return ret

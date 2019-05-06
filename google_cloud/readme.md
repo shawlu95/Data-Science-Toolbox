@@ -1,5 +1,3 @@
-### Identity & Security
-
 ### Introduction to Google Cloud Platform
 #### Innovation
 * White paper: MapReduce, Google File System, Colossus.
@@ -23,3 +21,6 @@
 * Networking: Domains, DNS, CLB, CDN, VPC, VPN, Interconnect, Router ([note](103_networking.md)).
 * Machine Learning: Cloud ML, Vision API, Speech API, NLP API, Translation, Diaglogflow, Video Intelligence, Cloud Job Discovery ([note](104_machine_learning.md)).
 * Big Data: IoT Core, Cloud Pub/Sub, Cloud Dataprep, Cloud Dataproc, Cloud Dataflow, Cloud Datalab, Cloud Data Studio, Cloud Genomics ([note](105_big_data.md)).
+* Roles and Security: Cloud IAM, Service Account, Cloud Identity, Security Key Enforcement, Resource Manager, Cloud Audit Logging, Cloud Key Management Service, Cloud IAP, Security Scanner, Cloud Data Loss Prevention API ([note](106_IAM.md)).
+* Operations Management: Stackdriver Monitoring, Logging, Error Reporting, Trace, Debugger, Deployment Manager, Billing API ([note](107_operations_management.md)).
+* Development: Cloud Source Repositories, Container Builder & Registry, Cloud Endpoints, Apigee API Platform, Test Lab for Android ([note](108_dev_API.md)).

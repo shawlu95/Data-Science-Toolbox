@@ -1,5 +1,3 @@
-### Identity & Security
-
 ### Introduction to Google Cloud Platform
 #### Innovation
 * White paper: MapReduce, Google File System, Colossus.
@@ -23,3 +21,5 @@
 * Networking: Domains, DNS, CLB, CDN, VPC, VPN, Interconnect, Router ([note](103_networking.md)).
 * Machine Learning: Cloud ML, Vision API, Speech API, NLP API, Translation, Diaglogflow, Video Intelligence, Cloud Job Discovery ([note](104_machine_learning.md)).
 * Big Data: IoT Core, Cloud Pub/Sub, Cloud Dataprep, Cloud Dataproc, Cloud Dataflow, Cloud Datalab, Cloud Data Studio, Cloud Genomics ([note](105_big_data.md)).
+
+Course Link: https://acloud.guru/learn/gcp-101

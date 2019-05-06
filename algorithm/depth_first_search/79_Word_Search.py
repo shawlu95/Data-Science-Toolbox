@@ -10,6 +10,7 @@ class Solution:
         #     return False
 
         def dfs(board, r, c, word):
+            # base case (r, c can be out of bound here!)
             if word == "":
                 return True
 
@@ -18,21 +19,24 @@ class Solution:
             if not inBound(r, c):
                 return False
 
-            val = board[r][c]
-            if val == word[0]:
-                board[r][c] = "$"
+            if word[0] == board[r][c]:
+                saved = board[r][c]
+                board[r][c] = None
+
                 res = any(dfs(board, r + dr, c + dc, word[1:])
                           for dr, dc in [(1, 0), (-1, 0), (0, 1), (0, -1)])
 
                 # note: put back the character to be reused by other path
-                board[r][c] = val
+                board[r][c] = saved
                 return res
+
             return False
 
         return any(dfs(board, r, c, word)
                    for r in range(len(board))
                    for c in range(len(board[0])))
 
+    # same logic
     def exist2(self, board, word):
         # implicit handling edge case
         # if not board:
@@ -45,7 +49,7 @@ class Solution:
             if not inBound(r, c) or word[0] != board[r][c]:
                 return False
             saved = board[r][c]  # first character is found, check the remaining part
-            board[r][c] = "#"  # avoid visit agian
+            board[r][c] = None  # avoid visit agian
 
             # check whether can find "word" along one direction
             res = any(dfs(board, r + dr, c + dc, word[1:])

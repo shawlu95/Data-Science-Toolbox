@@ -1,5 +1,5 @@
 ### Development & APIs
-#### Cloud Source Repositories(Global)
+#### Cloud Source Repositories (Global)
 * Hosted private Git repositories, with integrations with GCP and other hosted repos.
 * ~ AWS CodeCommit, GitHub.
 * Support standard Git functionality.

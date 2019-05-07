@@ -14,3 +14,5 @@
 * Cloud Functions (GCF):
     - runs node.js code in response to an event.
     - "FaaS" or "Server-less" ~ AWS Lambdas.
+
+**Preemptiple**: get machine at steep discount, but willing to give up the machine if someone else comes along and is willing to pay full price. Preemptiple machines are cheap and can be bought in batch and used quickly. It makes heavy-duty computation task runs faster and even cheaper.

@@ -1,4 +1,9 @@
 ### Big Data
+Open source systems:
+1. Hadoop: http://hadoop.apache.org/
+2. Pig: http://pig.apache.org/
+3. Hive: http://hive.apache.org/
+4. Spark: http://spark.apache.org/
 
 #### Lifecycle
 1. Ingest
@@ -35,7 +40,17 @@ ___
 #### Cloud Dataproc (Zonal)
 * Batch MapReduce processing via configurable, managed Spark & Hadoop clusters.
 * ~ Amazon EMR, Spark, Hadoop.
-* `Image versioning` switches between different versions of Spark, Hadoop etc.
+* Google-managed: Hadoop, Pig, Hive, Spark!
+* Pros:
+    - `Image versioning` switches between different versions of Spark, Hadoop etc.
+    - familiar.
+    - resize in seconds (add/remove nodes).
+    - automated cluster management.
+    - integrates with Google Cloud (instead of HDFS).
+        - Dataproc is job-specific; run for a short time.
+        - storage and compute lifecycle is separated, with Google Cloud Storage.
+    - flexible VMs (preemptible).
+    - Google security.
 
 #### Cloud Dataflow (Zonal)
 * Smartly auto-scaled & fully managed batch or stream MapReduce-like processing.
@@ -48,6 +63,11 @@ ___
 #### Cloud Datalab (Regional)
 * Interactive tool: Juypyter Notebooks.
 * Pay for instances hosting notebooks.
+* Can store on Git or Cloud Repository.
+* Computation is done on Compute Engine.
+* If GCloud is installed on local computer, can run Datalab locally!
+
+![alt-text](figs/datalab.png)
 
 #### Cloud Data Studio (Global)
 * Big data visualization tool for dashboard and reporting.

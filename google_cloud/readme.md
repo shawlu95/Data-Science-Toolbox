@@ -47,3 +47,7 @@ Google Cloud Platform: https://cloud.google.com/
 Data Center: https://www.google.com/about/datacenters/
 Google IT Security: https://cloud.google.com/files/Google-CommonSecurity-WhitePaper-v1.4.pdf
 Pricing Philosophy: https://cloud.google.com/pricing/philosophy/
+Compute Engine: https://cloud.google.com/compute/
+Storage: https://cloud.google.com/storage/
+Pricing: https://cloud.google.com/pricing/
+Cloud Launcher: https://cloud.google.com/launcher/

@@ -9,8 +9,10 @@
     - ~ AWS EC2 Container Service (ECS & EKS).
 * App Engine (GAE):
     - platform as a service (PaaS) that takes your code and runs it.
+    - started in 2008. Auto-scale. **Server-less** Just kills.
     - ~ AWS Elastic Beanstalk, Heroku.
-    - Support Java, Python, PHP, go, or any container.
+    - used to require app to be in Java. "Didn't get the right stepping stones into the cloud."
+    - Now support Java, Python Flask, PHP, go, or any container (`Docker container`).
 * Cloud Functions (GCF):
     - runs node.js code in response to an event.
     - "FaaS" or "Server-less" ~ AWS Lambdas.

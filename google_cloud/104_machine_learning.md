@@ -47,3 +47,10 @@
 #### Prediction API (Deprecated)
 * RESTful API for training ML models.
 * Shut down on Apr 2018.
+
+#### Reference
+* TensorFlow: https://www.tensorflow.org/
+* Cloud Machine Learning: https://cloud.google.com/ml/
+* Vision API: https://cloud.google.com/vision/
+* Translate API: https://cloud.google.com/translate/
+* Speech API: https://cloud.google.com/speech/

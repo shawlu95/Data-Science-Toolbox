@@ -66,6 +66,8 @@ ___
 * Can store on Git or Cloud Repository.
 * Computation is done on Compute Engine.
 * If GCloud is installed on local computer, can run Datalab locally!
+* Easy to share with collaborator.
+* Integrate seamlessly with BigQuery.
 
 ![alt-text](figs/datalab.png)
 

@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<script>window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"caff0d62ed","applicationID":"29451451","transactionName":"IQ1XRUEOVV1dFxlRXAEXSlRATkpZVxI=","queueTime":0,"applicationTime":127,"agent":""}</script>
+<script>window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+<script src="https://cdn.qwiklabs.com/assets/error_reporting-eab3108e7c027a9f2c80f632ccd1f6e48c6075dfb8330451ddf84893b14a1825.js"></script>
+<meta content='[]' name='active-experiments'>
+<meta content='{&quot;userId&quot;:1642017}' name='help-api-product-data'>
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="VMEiPUB88G3ASdnMBnQilcDwjp1cdAvXYO0js+o1+3or0mn7aYZcvh5KkchckwJZp4za5OZNqs1/fdHnvD7VXg==" />
+<title>Big Data &amp;amp; ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3 | Qwiklabs</title>
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=0' name='viewport'>
+<meta content='In this lab you use BigQuery from within Datalab to create a Pandas dataframe that will be the training data for predicting taxicab demand.' name='description'>
+<meta content='Qwiklabs' name='author'>
+<meta property="og:url" content="https://www.qwiklabs.com/focuses/16385" /><link href="https://www.qwiklabs.com/focuses/16385" rel="canonical" />
+<meta content='1rRsY0INj8RvwB5EF5pwdxt2A2P9aDgAlsICaJ0d5w0' name='google-site-verification'>
+<meta content='Big Data &amp;amp; ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3 | Qwiklabs' property='og:title'>
+<meta content='website' property='og:type'>
+<meta content='/favicon-144.png' property='og:image'>
+<meta content='Qwiklabs' property='og:site_name'>
+<meta content='In this lab you use BigQuery from within Datalab to create a Pandas dataframe that will be the training data for predicting taxicab demand.' property='og:description'>
+<meta content='/qwiklabs_logo_900x887.png' property='og:logo' size='900x887'>
+<meta content='/qwiklabs_logo_994x187.png' property='og:logo' size='994x187'>
+<meta content='#3681E4' property='msapplication-TileColor'>
+<meta content='/favicon-144.png' property='msapplication-TileImage'>
+<link href='/favicon-32.png' rel='shortcut icon'>
+<link color='#3681E4' href='/favicon-svg.svg' rel='mask-icon'>
+<link href='/favicon-180.png' rel='apple-touch-icon-precomposed'>
+<link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Oswald:400|Roboto+Mono:400,700|Roboto:300,400,500,700|Google+Sans:300,400,500,700|Google+Sans+Display:400|Material+Icons" />
+
+
+<!--[if lt IE 9]>
+<script src='http://html5shim.googlecode.com/svn/trunk/html5.js' type='text/javascript'></script>
+<![endif]-->
+<!--[endif]>  <![endif]-->
+<script>
+//<![CDATA[
+window.gon={};gon.current_user={"firstname":"Shaw","lastname":"Lu","fullname":"Shaw Lu","company":"Coursera","email":"shaw.lu@nyu.edu","origin":"googlecoursera-run, lti-coursera","subscriptions":0,"id":"58e40025c3c387f8f47a3666ad6fb38d","qlCreatedAt":"2019-05-07 01:27:38 UTC","optIn":null};gon.segment="j4Im8pqIko0Lxq4wVVZWMPMM0EroHUvb";gon.deployment="googlecoursera-run";
+//]]>
+</script>
+<script type='application/ld+json'>
+{
+  "@context": "http://schema.org",
+  "@type": "WebSite",
+  "url": "https://www.qwiklabs.com/",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.qwiklabs.com/catalog?keywords={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+
+
+
+<link rel="stylesheet" media="all" href="https://cdn.qwiklabs.com/assets/application-92d58a9a5df4407f208006539ecbffe9f7873eb7c1c40ae12cd9745af923abc7.css" />
+<script>
+  EVENT_SOURCE_BASE_URL = "https://googlecoursera-run.qwiklabs.com/nchan-sub?id=";
+</script>
+<script src="https://cdn.qwiklabs.com/polyfills/webcomponents-loader.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/hallofmirrors/hallofmirrors-3acde9ad9287d8ce9d1e78731ceed2e628ba0534a0c1094b4e1cbac09a6a6114.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="https://cdn.qwiklabs.com/assets/vendor-6de3ede8df1048f09413b5f8f2bbc2ab451ddfee2e5f7b5791e46671f41b8019.js"></script>
+<script src="https://cdn.qwiklabs.com/assets/application-4f043533e70f69106ace797ca64673252233c460bf6cc27cdf677e0b3a8cbb46.js"></script>
+<script>
+  var errorHandler = new StackdriverErrorReporter();
+  errorHandler.start({
+    key: 'AIzaSyCkrYBqwUuCqHbHVq02MVHfoXq80yws4eg',
+    projectId: 'qwiklabs-website-prod'
+  })
+</script>
+</head>
+<body class='is-open focuses focuses-show lab-show l-full no-nav '>
+<div class='header-container'>
+<div class='header'>
+<a class='mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect header__button header__button--nav header__side-menu-button js-side-menu-button'>
+<i class='material-icons'>menu</i>
+</a>
+<div class='header__title'>
+<a class="mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--nav" href="https://www.coursera.org/learn/gcp-big-data-ml-fundamentals/gradedLti/AP0up/create-ml-dataset-with-bigquery"><i class="material-icons">arrow_back</i></a>
+
+<h1 class='headline-5'>
+Big Data &amp; ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3
+</h1>
+</div>
+<div class='header__actions'>
+<a class='mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button header__button--action header__button--search js-header-search-bar-button'>
+<i class='material-icons'>search</i>
+</a>
+
+<ql-help context="lab" productdata="{&quot;userId&quot;:1642017}"></ql-help>
+<a class='header-my-account-button mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect js-my-account-button'>
+<img class="avatar " src="https://secure.gravatar.com/avatar/a77acba602f000e3b70692d5025955e1.png?s=80&amp;d=mm" />
+</a>
+<div class='header-my-account-menu js-my-account-menu'>
+<div class='card elevation-2 no-padding'>
+<div class='my-account-menu__top'>
+<img class="avatar " src="https://secure.gravatar.com/avatar/a77acba602f000e3b70692d5025955e1.png?s=80&amp;d=mm" />
+<div class='my-account-menu__info'>
+<h4 class='subtitle-headline-1'>
+Shaw Lu
+</h4>
+<p class='body-2 text--gray'>
+<span>shaw.lu@nyu.edu</span>
+</p>
+<a class="button" href="/my_account/profile">My Account</a>
+</div>
+</div>
+<div class='my-account-menu__bottom'>
+<a class="text--green subtitle-headline-2" href="/my_account/credits">2362 Credits
+</a><a class="button button--hairline" rel="nofollow" data-method="delete" href="/users/sign_out">Sign out</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class='header__search-bar js-header-search-bar'>
+<form id="catalog-search-mobile" onsubmit="ql.catalogSearchFilter(); return false;" action="/searches/elasticsearch" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="AskGDZ8AOxUUFxJcCOL2QOvt80FfAwXG2aZIfK9KHw992k3LtvqXxsoUWlhSBdaMjJGnOOU6pNzGNroo+UExKw==" />
+<input type="text" name="keywords" id="keywords" placeholder="Search" />
+</form>
+
+<a class='mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect header__button'>
+<i class='material-icons'>close</i>
+</a>
+</div>
+
+<nav class='is-open js-side-menu side-menu'>
+<div class='side-menu__inner' style='min-height: 346px;'>
+<nav class='side-menu__nav'>
+<a title="Home" class="side-menu__item js-navigation-button" href="/"><div class='side-menu__item__icon'>
+<ql-icon>home</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+Home
+</div>
+</a>
+<a title="Catalog" class="side-menu__item js-navigation-button" href="/catalog"><div class='side-menu__item__icon'>
+<ql-icon>school</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+Catalog
+</div>
+</a>
+<a title="My Learning" class="side-menu__item js-navigation-button" href="/my_learning"><div class='side-menu__item__icon'>
+<ql-icon>event_note</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+My Learning
+</div>
+</a>
+</nav>
+<div class='side-menu__small-links js-small-links'>
+<a href="/privacy_policy">Privacy</a>
+<a href="/terms_of_service">Terms of Service</a>
+</div>
+</div>
+</nav>
+
+<main class='js-main'>
+<span class='hidden' id='flash-sibling-before'></span>
+
+<div class='l-main-wrapper'>
+
+
+
+
+
+
+
+<div class='js-lab-state' data-analytics-payload='{&quot;label&quot;:&quot;Big Data \u0026 ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3&quot;,&quot;lab_name&quot;:&quot;Big Data \u0026 ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3&quot;,&quot;classroom_name&quot;:null,&quot;deployment&quot;:&quot;googlecoursera-run&quot;}' data-focus-id='16385' data-lab-billing-limit='0.0' data-lab-duration='5400' data-parent='classroom'></div>
+<ql-new-lab-control-panel class='js-lab-control-panel l-lab-control-panel' connectionDetails='[]' connectionFiles='[]' labControlButton='{&quot;disabled&quot;:false,&quot;pending&quot;:false,&quot;running&quot;:false}' labTimer='{&quot;ticking&quot;:false,&quot;secondsRemaining&quot;:5400,&quot;seconds_remaining&quot;:5400}' studentResources='[]'></ql-new-lab-control-panel>
+
+<div class='l-lab-main-body'>
+<div class='js-lab-content lab-content'>
+<div class='alert alert--fake js-alert'>
+<p class='alert__message js-alert-message'></p>
+<a class='alert__close js-alert-close'>
+<i class='fa fa-times'></i>
+</a>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='lab-content__markdown-wrapper'>
+<div class='lab-preamble'>
+<h1 class='lab-preamble__title'>
+Big Data &amp; ML Fundamentals Lab 5: Create ML Dataset with BigQuery v1.3
+</h1>
+<div class='lab-preamble__details subtitle-headline-1'>
+<span>1 hour 30 minutes</span>
+<span>1 Credit</span>
+<div class='lab__rating'>
+<a href="/focuses/16385/reviews?parent=catalog"><div class='rateit' data-rateit-readonly='true' data-rateit-value='3.9934'></div>
+
+</a><a data-target='#lab-review-modal' data-toggle='modal'>
+Rate Lab
+</a>
+</div>
+</div>
+</div>
+
+<div class='lab-content__inner-wrapper'>
+<div class='js-markdown-instructions lab-content__markdown markdown-lab-instructions' id='markdown-lab-instructions'>
+
+
+
+<h2 id="step1">Overview</h2>
+<p>In this lab, you use BigQuery from within Datalab to create a Pandas dataframe that will be the training data for predicting taxicab demand.</p>
+<h3><strong>What you learn</strong></h3>
+<p>In this lab, you will:</p>
+<ul>
+<li>
+<p>Use BigQuery and Datalab to explore and visualize data</p>
+</li>
+<li>
+<p>Build a Pandas dataframe that will be used as the training dataset for machine learning using TensorFlow</p>
+</li>
+</ul>
+<h2 id="step2">Introduction</h2>
+<p>In this lab and the next, you will build a demand forecast system using machine learning. You plan to use TensorFlow to predict taxicab demand on a day-by-day basis. In order to do that, you will first need a training dataset that consists of the factors that affect taxi demand ("input features") and the actual demand ("target") on days in the past. You will use this data to train a neural network that can then predict the demand on days in the future given those features as input.</p>
+<p>In this lab, you will use BigQuery in Datalab to build the dataset that we will use in the next lab to carry out the machine learning.</p>
+<h2 id="step3">Setup</h2>
+<h3>Activate Google Cloud Shell</h3>
+<p>Google Cloud Shell provides command-line access to your GCP resources.</p>
+<p>From the GCP Console click the <strong>Cloud Shell</strong> icon on the top right toolbar:</p>
+<p><img alt="Cloud Shell Icon" src="https://cdn.qwiklabs.com/cYAp3uDlYsYcFFNsWmNqW64O9RNumGO5gWDR4GEjkIo%3D"></p>
+<p>Then click <strong>START CLOUD SHELL</strong>:</p>
+<p><img alt="Start Cloud Shell" src="https://cdn.qwiklabs.com/%2FrXqdLSk9t%2BseADznDVQNk7Xozp6sXtutHyrPmXDOxM%3D"></p>
+<aside>
+You can click <strong>START CLOUD SHELL</strong> immediately when the dialog comes up instead of waiting in the dialog until the Cloud Shell provisions.
+
+</aside>
+<p>It  takes a few moments to provision and connects to the environment:</p>
+<p><img alt="Cloud Shell Terminal" src="https://cdn.qwiklabs.com/Ed7y6PTP1vFZDz%2FYJdRWZlhQHKh%2BHV0VUqoXM5BQwZQ%3D"></p>
+<p>The Cloud Shell is a virtual machine loaded with all the development tools you’ll need. It offers a persistent 5GB home directory, and runs on the Google Cloud, greatly enhancing network performance and authentication.</p>
+<p>Once connected to the cloud shell, you'll see that you are already authenticated and  the project is set to your <em>PROJECT_ID</em>:</p>
+<pre><code>gcloud auth list&#x000A;</code></pre>
+<p>Output:</p>
+<pre><code class="language-output prettyprint">Credentialed accounts:&#x000A; - &lt;myaccount&gt;@&lt;mydomain&gt;.com (active)&#x000A;</code></pre>
+<aside>
+<strong>Note:</strong> <code>gcloud</code> is the powerful and unified command-line tool for Google Cloud Platform. Full documentation is available on <a href="https://cloud.google.com/sdk/gcloud">Google Cloud gcloud Overview</a>. It comes pre-installed on Cloud Shell and supports tab-completion.
+
+</aside>
+<pre><code>gcloud config list project&#x000A;</code></pre>
+<p>Output:</p>
+<pre><code class="language-output prettyprint">[core]&#x000A;project = &lt;PROJECT_ID&gt;&#x000A;</code></pre>
+
+<h2 id="step4">Task 1: Launch Cloud Datalab</h2>
+<p>To launch Cloud Datalab:</p>
+<ol>
+<li>
+<p>In <strong>Cloud Shell</strong>, type:</p>
+<pre><code class="language-bash prettyprint">datalab create bdmlvm --zone us-central1-a&#x000A;</code></pre>
+</li>
+</ol>
+<p>Datalab will take about 5 minutes to start.</p>
+<p><code>Note: follow the prompts during this process.</code></p>
+<p>If you are not yet familiar with Datalab, what follows is a graphical cheat sheet for the main Datalab functionality:</p>
+<p><img alt="369bf7e045b084ed.png" src="https://cdn.qwiklabs.com/A0HBSc6qiJ6gfwxQ8sWiWkuT42xZAPv2crg2k5PqBv8%3D"></p>
+<p>Click Check my progress to verify the objective.
+<ql-activity-tracking step="1">
+Launch Cloud Datalab
+</ql-activity-tracking></p>
+<h2 id="step5">Task 2: Checkout notebook into Cloud Datalab</h2>
+<p>Note: If necessary, wait for Datalab to finish launching. Datalab is ready when you see a message prompting you to do a "Web Preview".</p>
+<ol>
+<li>
+<p>Click on the <strong>Web Preview</strong> icon on the top-right corner of the Cloud Shell ribbon. Click on <strong>Change port</strong>. Switch to port <strong>8081</strong> using the <strong>Change Preview Port</strong> dialog box, and then click on <strong>Change and Preview</strong>.</p>
+<p><img alt="ChangePort.png" src="https://cdn.qwiklabs.com/D%2BLhfUB45DxXJJg5F4jbMd3JgSmmFMUdufuQEWukoUI%3D"></p>
+<p><img alt="ChangePreviewPort.png" src="https://cdn.qwiklabs.com/%2FwdVRCOkF%2FSfhZqqX%2BOnrGvPw9Pbmt0auZAYxoHXSTg%3D"></p>
+<p>Note: The connection to your Datalab instance remains open for as long as the datalab command is active. If the cloud shell used for running the datalab command is closed or interrupted, the connection to your Cloud Datalab VM will terminate. If that happens, you may be able to reconnect using the command <code>datalab connect bdmlvm</code> in your new Cloud Shell.</p>
+</li>
+<li>
+<p>In <strong>Datalab</strong>, click on the icon for <strong>Open ungit</strong> in the top-right ribbon.</p>
+<p><img alt="fc5c4f63c40f83f.png" src="https://cdn.qwiklabs.com/LK77GJYms0fyZsmvcegCr%2Fz6OsynJqn8LmNS61LTAZc%3D"></p>
+</li>
+<li>
+<p>In the Ungit window, select the text that reads <strong>/content/datalab/notebooks</strong> and remove the <strong>notebooks</strong> so that it reads <strong>/content/datalab</strong>, then hit <strong>Enter</strong>.</p>
+<p><img alt="dbeb32393b0874e4.png" src="https://cdn.qwiklabs.com/9px4Zc%2BII5xoIVGrwUvwShudOZbLRDvEYEj9qiJHlOI%3D"></p>
+</li>
+<li>
+<p>In the panel that comes up, type the following as the GitHub repository to <strong>Clone from</strong>:</p>
+<pre><code class="language-bash prettyprint">https://github.com/GoogleCloudPlatform/training-data-analyst&#x000A;</code></pre>
+</li>
+<li>
+<p>Click <strong>Clone repository</strong>.</p>
+</li>
+</ol>
+<p>Click Check my progress to verify the objective.
+<ql-activity-tracking step="2">
+Checkout notebook into Cloud Datalab
+</ql-activity-tracking></p>
+<h2 id="step6">Task 3: Open a Datalab notebook</h2>
+<ol>
+<li>
+<p>In the Datalab browser, navigate to <strong>training-data-analyst &gt; CPB100 &gt; lab4a &gt; demandforecast.ipynb</strong>.</p>
+</li>
+<li>
+<p>Read the commentary, Click <strong>Clear | Clear all Cells</strong>, then run the Python snippets (Use <strong>Shift+Enter</strong> to run each piece of code) in the cell, step by step.</p>
+</li>
+<li>
+<p>When you reach the section <strong>Machine Learning with Tensorflow</strong>, please stop -- that is the next lab.</p>
+</li>
+</ol>
+<h2 id="step7">End your lab</h2>
+<p>When you have completed your lab, click <strong>End Lab</strong>. Qwiklabs removes the resources you’ve used and cleans the account for you.</p>
+<p>You will be given an opportunity to rate the lab experience. Select the applicable number of stars, type a comment, and then click <strong>Submit</strong>.</p>
+<p>The number of stars indicates the following:</p>
+<ul>
+<li>1 star = Very dissatisfied</li>
+<li>2 stars = Dissatisfied</li>
+<li>3 stars = Neutral</li>
+<li>4 stars = Satisfied</li>
+<li>5 stars = Very satisfied</li>
+</ul>
+<p>You can close the dialog box if you don't want to provide feedback.</p>
+<p>For feedback, suggestions, or corrections, please use the <strong>Support</strong> tab.</p>
+
+<p>Last Manual Updated Date: 2019-04-12</p>
+<p>Last Tested Date: 2019-04-12</p>
+<p>©2019 Google LLC All rights reserved. Google and the Google logo are trademarks of Google LLC. All other company and product names may be trademarks of the respective companies with which they are associated.</p>
+
+
+
+</div>
+<div class='js-lab-content-outline lab-content__outline'>
+<a href='#step1'>Overview</a><a href='#step2'>Introduction</a><a href='#step3'>Setup</a><a href='#step4'>Task 1: Launch Cloud Datalab</a><a href='#step5'>Task 2: Checkout notebook into Cloud Datalab</a><a href='#step6'>Task 3: Open a Datalab notebook</a><a href='#step7'>End your lab</a>
+</div>
+</div>
+
+</div>
+
+
+</div>
+</div>
+<div class='lab-assessment__tab js-lab-assessment-tab'>
+<h5 class='small-label'>
+Score
+</h5>
+<h3 class='js-lab-assessment-total-score'>
+&mdash;/10
+</h3>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='lab-assessment__panel js-lab-assessment-panel'>
+<!-- / If lab_instance has is started and assessment is generated, use -->
+<!-- / lab_instance.assessment, otherwise use lab.assessment_manual -->
+<div class='lab-assessment__step'>
+<p class='lab-assessment__step__title'>
+Launch Cloud Datalab
+</p>
+<p class='button button--assessment js-show-run-step-button' step_no='1'>
+Run Step
+</p>
+<p class='lab-assessment__step__score'>
+<span class='js-assessment-step-score-1'>
+</span>
+/ 5
+</p>
+</div>
+
+<div class='lab-assessment__step'>
+<p class='lab-assessment__step__title'>
+Checkout notebook into Cloud Datalab
+</p>
+<p class='button button--assessment js-show-run-step-button' step_no='2'>
+Run Step
+</p>
+<p class='lab-assessment__step__score'>
+<span class='js-assessment-step-score-2'>
+</span>
+/ 5
+</p>
+</div>
+
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='lab-introduction js-lab-introduction is-hidden'>
+<div class='lab-introduction__inner'>
+<h1 class='headline-1'>Welcome to Your First Lab!</h1>
+<div class='lab-introduction__video'>
+<iframe allow='autoplay; encrypted-media' frameborder='0' id='lab-introduction' src='https://www.youtube.com/embed/yF7EDXKTmoQ?enablejsapi=1&amp;rel=0&amp;showinfo=0'></iframe>
+</div>
+<a class='button js-skip-button'>Skip</a>
+</div>
+</div>
+
+
+</div>
+</main>
+<div class='bottom-menu'>
+<a title="Home" class="side-menu__item js-navigation-button active" aria-current="page" href="/"><div class='side-menu__item__icon'>
+<ql-icon>home</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+Home
+</div>
+</a>
+<a title="Catalog" class="side-menu__item js-navigation-button" href="/catalog"><div class='side-menu__item__icon'>
+<ql-icon>school</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+Catalog
+</div>
+</a>
+<a title="My Learning" class="side-menu__item js-navigation-button" href="/my_learning"><div class='side-menu__item__icon'>
+<ql-icon>event_note</ql-icon>
+</div>
+<div class='side-menu__item__label'>
+My Learning
+</div>
+</a>
+<a class='side-menu__item js-side-menu-button'>
+<div class='side-menu__item__icon'>
+<i class='material-icons'>menu</i>
+</div>
+<span class='side-menu__item__tooltip'>More</span>
+<div class='side-menu__item__label'>
+More
+</div>
+</a>
+</div>
+
+<div class='modal fade' id='support-modal'>
+<div class='modal-container'>
+<div class='mdl-shadow--24dp modal-content'>
+<h4 class='modal-header'>How can we help you?</h4>
+<form action="/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="ClroiTBhlwl3dUuPetDeElI7iasGstfVgVWgZjzrXsp1SaNPGZs72ql2A4sgN/7eNUfd0ryLds+exVIyauBw7g==" />
+<div class='modal-body'>
+<p class='l-mbl'>We will get back to you within 24 hours.</p>
+<div class='form-row'>
+<div class='control-group'>
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question" />
+</div>
+</div>
+<div class='form-row'>
+<div class='control-group'>
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.&#x000A;">
+</textarea>
+</div>
+</div>
+<div class='form-row'>
+<div class='control-group'>
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="Shaw Lu" />
+</div>
+<div class='control-group'>
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value="shaw.lu@nyu.edu" />
+</div>
+</div>
+</div>
+<div class='modal-actions'>
+<a class='mdl-button mdl-button--cancel mdl-js-button mdl-js-ripple-effect l-mll' data-dismiss='modal'>
+Nevermind
+</a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect" data-disable-with="Submit" />
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='modal fade' id='lab-help-modal'>
+<div class='modal-container'>
+<div class='mdl-shadow--24dp modal-content'>
+<h4 class='modal-header'>Get Help</h4>
+<form action="/contact_support" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="8MxFV3r/8ppfpuLiG/cn73v7zs6JS/u4VMSb8OAC4v2P3w6RUwVeSYGlquZBEAcjHIeatzNyWqJLVGmktgnM2Q==" />
+<div class='modal-body'>
+<div class='control-group l-mbl'>
+<label for="Question">Question</label>
+<input type="text" name="question" id="question" placeholder="Briefly describe your question" />
+</div>
+<div class='control-group l-mbl'>
+<label for="Details">Details</label>
+<textarea name="description" id="description" rows="5" placeholder="Fill in the details here. Please try to be as specific as possible.&#x000A;">
+</textarea>
+</div>
+<div class='control-group l-mbl'>
+<label for="Your_Name">Your name</label>
+<input type="text" name="name" id="name" value="Shaw Lu" />
+</div>
+<div class='control-group l-mbl'>
+<label for="Your_Email">Your email</label>
+<input type="text" name="email" id="email" value="shaw.lu@nyu.edu" />
+</div>
+<div class='control-group l-mbl'>
+<label for="Severity">Severity</label>
+<select name="severity" id="severity"><option value="0">-</option>
+<option value="severity_1">Severity 1 (Highest)</option>
+<option value="severity_2">Severity 2</option>
+<option value="severity_3">Severity 3</option>
+<option value="severity_4">Severity 4</option>
+<option value="severity_5">Severity 5 (Lowest)</option></select>
+</div>
+<div class='control-group'>
+<div class='control-label'></div>
+We will get back to you within 24 hours.
+</div>
+</div>
+<div class='modal-actions'>
+<a class='mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect' data-dismiss='modal'>
+Cancel
+</a>
+<input type="submit" name="commit" value="Submit" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-disable-with="Submit" />
+</div>
+</form>
+
+
+
+</div>
+</div>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='modal fade' id='lab-details-modal'>
+<div class='modal-container'>
+<div class='mdl-shadow--24dp modal-content'>
+<div class='modal-body'>
+<p class='l-mbm'>
+In this lab you use BigQuery from within Datalab to create a Pandas dataframe that will be the training data for predicting taxicab demand.
+</p>
+<p class='small-label l-mbs'>
+<strong>
+Duration:
+</strong>
+0m setup
+&middot;
+90m access
+&middot;
+90m completion
+</p>
+<p class='small-label l-mbs'>
+<span><strong>Levels: </strong>fundamental</span>
+</p>
+<p class='small-label'>
+<strong>
+Permalink:
+</strong>
+<a href="https://googlecoursera.qwiklabs.com/catalog_lab/989">https://googlecoursera.qwiklabs.com/catalog_lab/989</a>
+</p>
+</div>
+<div class='modal-actions'>
+<a class='mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect' data-dismiss='modal'>
+Got It
+</a>
+</div>
+
+
+</div>
+</div>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+<div class='modal fade' id='lab-review-modal'>
+<div class='modal-container'>
+<div class='mdl-shadow--24dp modal-content'>
+<form class="simple_form js-lab-review-form" id="new_lab_review" action="/lab_reviews" accept-charset="UTF-8" data-remote="true" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><div class='modal-body'>
+<p class='label'>
+How satisfied are you with this lab?
+</p>
+<div class='rateit js-rateit' data-rateit-max='5' data-rateit-min='0' data-rateit-resetable='false' data-rateit-step='1' data-rateit-value='0'></div>
+<div class='l-mtm'>
+
+<div class="control-group hidden lab_review_user_id"><div class="controls"><input class="hidden" type="hidden" value="1642017" name="lab_review[user_id]" id="lab_review_user_id" /></div></div>
+<div class="control-group hidden lab_review_classroom_id"><div class="controls"><input class="hidden" type="hidden" value="1938" name="lab_review[classroom_id]" id="lab_review_classroom_id" /></div></div>
+<div class="control-group hidden lab_review_lab_id"><div class="controls"><input class="hidden" type="hidden" value="989" name="lab_review[lab_id]" id="lab_review_lab_id" /></div></div>
+<div class="control-group hidden lab_review_focus_id"><div class="controls"><input class="hidden" type="hidden" value="16385" name="lab_review[focus_id]" id="lab_review_focus_id" /></div></div>
+<div class="control-group hidden lab_review_rating"><div class="controls"><input class="hidden js-rating-input" type="hidden" name="lab_review[rating]" id="lab_review_rating" /></div></div>
+<div class="control-group text optional lab_review_comment"><label class="text optional control-label" for="lab_review_comment">Comment</label><div class="controls"><textarea class="text optional" name="lab_review[comment]" id="lab_review_comment">
+</textarea></div></div>
+</div>
+</div>
+<div class='modal-actions'>
+<a class='mdl-button mdl-button--primary mdl-js-button mdl-js-ripple-effect' data-dismiss='modal'>
+Cancel
+</a>
+<input type="submit" name="commit" value="Submit" class="btn mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--primary" data-disable-with="Submit" />
+</div>
+</form>
+
+</div>
+</div>
+<iframe class='l-ie-iframe-fix'></iframe>
+</div>
+
+<script>
+  $( function() {
+    ql.initMaterialInputs();
+    initChosen();
+    initSearch();
+    initTabs();
+    ql.list.init();
+    ql.favoriting.init();
+    ql.header.myAccount.init();
+    initTooltips();
+    ql.autocomplete.init();
+    ql.modals.init();
+    initLabContent( );
+  ql.labOutline.links.init("16385");
+  ql.labOutline.layout.init();
+  initLabReviewModal();
+  initLabAssessment();
+  ql.labIntroduction.init( true );
+  ql.labData.init();
+  initLabTranslations( {"are_you_sure":"All done? If you end this lab, you will lose all your work. You may not be able to restart the lab if there is a quota limit. Are you sure you want to end this lab?\n","in_progress":"*In Progress*","ending":"*Ending*","starting":"*Starting, please wait*","end_concurrent_labs":"Sorry, you can only run one lab at a time. To start this lab, please confirm that you want all of your existing labs to end.\n","copied":"Copied","no_resource":"Error retrieving resource.","no_support":"No Support","mac_press":"Press ⌘-C to copy","thanks_review":"Thanks for reviewing this lab.","windows_press":"Press Ctrl-C to copy","days":"days"} );
+  initLabRun();
+  ql.initHeader();
+  ql.sideMenu.init();
+  ql.navigation.init();
+  
+  });
+</script>
+<style>
+  .mdl-layout__container {
+    position: static
+  }
+</style>
+</body>
+</html>

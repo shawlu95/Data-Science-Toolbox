@@ -51,3 +51,6 @@ Compute Engine: https://cloud.google.com/compute/
 Storage: https://cloud.google.com/storage/
 Pricing: https://cloud.google.com/pricing/
 Cloud Launcher: https://cloud.google.com/launcher/
+Cloud SQL: https://cloud.google.com/sql/
+Cloud Dataproc: https://cloud.google.com/dataproc/
+Cloud Solutions: https://cloud.google.com/solutions/

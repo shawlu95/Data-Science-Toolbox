@@ -4,6 +4,7 @@
 doc/
 inputs/
 outputs/
+archive/
 *.pem
 master/
 tf_logs/

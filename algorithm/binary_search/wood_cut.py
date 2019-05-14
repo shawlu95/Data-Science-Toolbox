@@ -1,7 +1,10 @@
 """
 [LintCode] 183 Wood Cut
 Description
-Given n pieces of wood with length L[i] (integer array). Cut them into small pieces to guarantee you could have equal or more than k pieces with the same length. What is the longest length you can get from the n pieces of wood? Given L & k, return the maximum length of the small pieces.
+Given n pieces of wood with length L[i] (integer array). Cut them into small
+pieces to guarantee you could have equal or more than k pieces with the same
+length. What is the longest length you can get from the n pieces of wood?
+Given L & k, return the maximum length of the small pieces.
 
 Notice
 You couldn't cut wood into float length.

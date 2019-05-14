@@ -32,18 +32,18 @@ class Solution(object):
 
         result = []
         stack = []
-        curr = root
-        while curr or stack:
-            while curr:
-                stack.append(curr)
-                curr = curr.left
-            curr = stack.pop()
+        cur = root
+        while cur or stack:
+            while cur:
+                stack.append(cur)
+                cur = cur.left
+            cur = stack.pop()
 
             # do something --------
-            result.append(curr.val)
+            result.append(cur.val)
             # ---------------------
 
-            curr = curr.right
+            cur = cur.right
         return result
 
     # compare to def preorderTraversal3(self, root): in 144 Preorder Traversak
@@ -59,19 +59,19 @@ class Solution(object):
 
         result = []
         stack = []
-        curr = root
-        while curr or stack:
-            if curr:
-                stack.append(curr)
-                curr = curr.left
+        cur = root
+        while cur or stack:
+            if cur:
+                stack.append(cur)
+                cur = cur.left
             else:
-                curr = stack.pop()
+                cur = stack.pop()
 
                 # do something --------
-                result.append(curr.val)
+                result.append(cur.val)
                 # ---------------------
 
-                curr = curr.right
+                cur = cur.right
         return result
 
     def inorderTraversalFlat(self, root):

@@ -18,6 +18,9 @@
 * O(2^N)：组合Combination。
 * O(N!)：排列Permutation。
 
+#### 九章算法笔记
+1. Binary Search [[Note](binary_search)].
+1. Binary Tree [[Note](tree)].
 ___
 #### 沟通
 * recursion or loop?

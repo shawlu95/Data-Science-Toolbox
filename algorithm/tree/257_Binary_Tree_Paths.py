@@ -4,6 +4,25 @@ tree = Tree.Tree(treeVals)
 root = tree.root
 
 class Solution(object):
+
+    def binaryTreePaths(self, root):
+        """
+        九章算法模版：Divide & Conquer
+        """
+        def divide(root):
+            if not root:
+                # needed for missing child
+                return []
+
+            if not root.left and not root.right:
+                # leaf node, pay attention to nested bracket!
+                return [[str(root.val)]]
+
+            paths = divide(root.left) + divide(root.right)
+            return [[str(root.val)] + path for path in paths]
+
+        return ["->".join(path) for path in divide(root)]
+
     ans = []
     def binaryTreePaths(self, root):
         """

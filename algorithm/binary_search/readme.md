@@ -27,9 +27,4 @@ T(N) = T(N/2) + O(N) = ... = O(N + N/2 + N/4 + ...) + T(1) ~= O(2N) = O(N)
 * Half-half: Find peak index in a mountain array. Apply logic, not template [[852](852_peak_index_in_a_mountain_array.py)].
 * No array: Square root [[69](69_sqrtx.py)].
 * 二分答案：Wood cut [[link](https://www.lintcode.com/problem/wood-cut/description)][[wood_cut.py](wood_cut.py)]
-
-![alt-text](../assets/wood_cut.png)
-
 * 二分答案：Copy book [[link](https://www.lintcode.com/problem/copy-books/description)][[copy_book.py](copy_book.py)]
-
-![alt-text](../assets/copy_book.png)

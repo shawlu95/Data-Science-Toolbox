@@ -6,6 +6,40 @@
 class Solution(object):
     def firstBadVersion(self, n):
         """
+        九章算法模版(LeetCode accepted).
+        Note that end index is inclusive (version n).
+        """
+        l, r = 0, n
+        while l + 1 < r: # cannot have equal sign, because r = m may get stuck
+            m = (r - l) // 2 + l
+            if isBadVersion(m):
+                # cannot do r <- m - 1, because m can be first bad
+                # out-of-bound error also possible
+                r = m
+            else:
+                # m is a good version, first bad version must be > m
+                l = m + 1
+
+        # three possible results
+        if isBadVersion(l):
+            # OOXX
+            #   ^^
+
+            # XXXX
+            # ^^
+            return l
+        elif isBadVersion(r):
+            # OOXX
+            #  ^^
+            return r
+
+        # OOOO
+        #   ^^
+        return -1 # no bad version
+
+class Solution(object):
+    def firstBadVersion(self, n):
+        """
         :type n: int
         :rtype: int
         """

@@ -23,7 +23,6 @@ class Solution(object):
             dec = 1
             if node.left:
                 l = traverse(node.left)
-
                 if node.val == node.left.val + 1:
                     dec = l[1] + 1
                 elif node.val == node.left.val - 1:

@@ -34,14 +34,14 @@ class Solution(object):
 #         self.next = None
 
 # if( null==headA || null==headB )
-# 			return null;
+#       return null;
 
-# 		ListNode curA = headA, curB = headB;
-# 		while( curA!=curB){
-# 			curA = curA==null?headB:curA.next;
-# 			curB = curB==null?headA:curB.next;
-# 		}
-# 		return curA;
+#     ListNode curA = headA, curB = headB;
+#     while( curA!=curB){
+#       curA = curA==null?headB:curA.next;
+#       curB = curB==null?headA:curB.next;
+#     }
+#     return curA;
 
 class Solution2(object):
     def getIntersectionNode(self, headA, headB):

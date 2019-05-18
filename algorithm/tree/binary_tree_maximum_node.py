@@ -21,7 +21,7 @@ class Solution:
             avg = cur_sum / cur_size
             if avg > self.avg:
                 # update benchmark
-                self.avg = cur_sum / cur_sum
+                self.avg = avg
                 self.node = root
             return cur_sum, cur_size
 

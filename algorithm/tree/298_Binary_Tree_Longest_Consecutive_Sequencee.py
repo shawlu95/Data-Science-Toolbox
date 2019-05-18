@@ -1,4 +1,4 @@
-# Definition for a binary tree node.
+ # Definition for a binary tree node.
 # class TreeNode(object):
 #     def __init__(self, x):
 #         self.val = x
@@ -12,8 +12,7 @@ class Solution(object):
     # top-down, my solution, one-pass success
     def longestConsecutive(self, root):
         """
-        :type root: TreeNode
-        :rtype: int
+        Pre-order traversal.
         """
 
         def traverse(node, parent, seq):
@@ -53,9 +52,21 @@ class Solution(object):
         self.ans = max(l, r, self.ans)
         return max(l, r)
 
+    def traverse3(node):
+        if not node:
+            return 0 # leaf node has l = 0, r = 0, streak = 1
+
+        l = traverse3(node.left)
+        r = traverse3(node.right)
+
+        streak = 1
+        if node.left and node.left.val == nodev.val + 1:
+            streak = max(streak, l + 1)
+        if node.righ and node.right.val == node.val + 1:
+            streak = max(streak, r + 1)
+        self.ans = max(self.ans, streak)
+        return streak
+
     traverse(root)
 
     return self.ans
-
-
-

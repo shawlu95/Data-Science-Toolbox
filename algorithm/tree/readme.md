@@ -62,30 +62,30 @@ def inorderTraversal(self, root):
 ```Python
 def preorderTraversal(root):
     ans = []
-    def traverse(node, l):
+    def traverse(node):
         if node is None: return
         ans.append(node.val)
-        traverse(node.left, l)
-        traverse(node.right, l)
+        traverse(node.left)
+        traverse(node.right)
     traverse(root, ans)
     return ans
 
 def inorderTraversal(root):
     ans = []
-    def traverse(node, l):
+    def traverse(node):
         if node is None: return
-        traverse(node.left, l)
+        traverse(node.left)
         ans.append(node.val)
-        traverse(node.right, l)
+        traverse(node.right)
     traverse(root, ans)
     return ans
 
 def postorderTraversal(root):
     ans = []
-    def traverse(node, l):
+    def traverse(node):
         if node is None: return
-        traverse(node.left, l)
-        traverse(node.right, l)
+        traverse(node.left)
+        traverse(node.right)
         ans.append(node.val)
     traverse(root, ans)
     return ans
@@ -95,20 +95,20 @@ def postorderTraversal(root):
 
 ```Python
 def divideConquerTraversal(self, root):
-	def traverse(node):
-		if node is None: return []
-		l = traverse(node.left)
-		r = traverse(node.right)
+  def traverse(node):
+    if node is None: return []
+    l = traverse(node.left)
+    r = traverse(node.right)
 
-        # preorder
-		# return [node.val] + l + r
+    # preorder
+    # return [node.val] + l + r
 
-        # inorder
-        # return l + [node.val] + r
+    # inorder
+    # return l + [node.val] + r
 
-        # post-order
-        return l + r + [node.val]
-	return traverse(root)
+    # post-order
+    return l + r + [node.val]
+  return traverse(root)
 ```
 
 #### Primer
@@ -116,7 +116,12 @@ def divideConquerTraversal(self, root):
 * Minimum subtree (DC) [[Link](https://starllap.space/2017/05/30/LintCode-596-Minimum-Subtree/)][[Code](minimum_subtree.py)].
 
 #### Application
-* Balanced binary tree [[Link][1]][[Code](110_balanced_binary_tree)].
+* Balanced binary tree [[Link](https://leetcode.com/problems/balanced-binary-tree/)][[Code](110_balanced_binary_tree)].
 * Tuple return: binary tree maximum node [[Link](https://www.lintcode.com/problem/binary-tree-maximum-node/description)][[Code](binary_tree_maximum_node.py)].
+* Flatten binary tree to linked list [[Link](https://leetcode.com/problems/flatten-binary-tree-to-linked-list/submissions/)][[114](114_flatten_binary_tree_to_linked_list.py)]
+* **Lowest common ancestor** [[Link](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/submissions/)][[Code](236_lowest_common_ancestor_of_a_binary_tree.py)]
+* Longest consecutive sequence in tree [[Link]()]
 
-[1] https://leetcode.com/problems/balanced-binary-tree/
+___
+* Binary Tree Longest Consecutive Sequence [[Link](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence/)][[Code](298_binary_tree_longest_consecutive_sequencee.py)].
+* Binary Tree Longest Consecutive Sequence II [[Link](https://leetcode.com/problems/binary-tree-longest-consecutive-sequence-ii/)][[Code](549_binary_tree_longest_consecutive_sequence_ii.py)]

@@ -1,29 +1,40 @@
-# Definition for a binary tree node.
-# class TreeNode(object):
-#     def __init__(self, x):
-#         self.val = x
-#         self.left = None
-#         self.right = None
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        """
+        Divide and conquer.
+        """
+        if not root or root == p or root == q: return root
 
-class Solution(object):
-    def lowestCommonAncestor(self, root, p, q):
+        l = self.lowestCommonAncestor(root.left, p, q)
+        r = self.lowestCommonAncestor(root.right, p, q)
+
+        # this is LCA: one node is in left, one node is in right
+        if l and r: return root
+
+        # return LCA to parent stack
+        if l: return l # one node is found in left subtree
+        if r: return r # one node is found in right subtree
+
+        # none of p or q is root's children
+        return None
+
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+
         """
-        :type root: TreeNode
-        :type p: TreeNode
-        :type q: TreeNode
-        :rtype: TreeNode
+        First build a map linking child to parent.
+        When construct entire path from p to root.
+        Traverse starting with q, end when first node is found in common.
         """
-        parent = {root: None}
+        parent = {root : None}
         queue = [root]
         while p not in parent or q not in parent:
-            node = queue[0]
-            queue = queue[1:]
-            if node.left:
-                parent[node.left] = node
-                queue.append(node.left)
+            node = queue.pop()
             if node.right:
                 parent[node.right] = node
                 queue.append(node.right)
+            if node.left:
+                parent[node.left] = node
+                queue.append(node.left)
         path = set()
         while p:
             path.add(p)

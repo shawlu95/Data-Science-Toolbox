@@ -1,6 +1,5 @@
 import Tree
 
-
 def countNotes(root):
     """
     Count how many nodes are in binary tree.
@@ -20,6 +19,10 @@ class Solution():
         self.subtree = None
 
     def minimumSubtree(self, root):
+        """
+        Use the same divide conquer logic to find sum of subtree.
+        Node can have negative values, otherwise simply pick smallest leaf.
+        """
         def helper(node):
             if node is None: return 0
             sum = node.val + helper(node.left) + helper(node.right)

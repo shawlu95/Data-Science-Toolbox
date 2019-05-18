@@ -25,15 +25,42 @@ root = tree.root
 #           6
 
 class Solution(object):
+    class Solution:
+    def flatten(self, root: TreeNode) -> None:
+        """
+        Stack solution
+        node    stack       connect right
+        1       5, 2        1 -> 2
+        2       5, 4, 3     2 -> 3
+        3       5, 4        3 -> 4
+        4       5           4 -> 5
+        5       6           5 -> 6
+        6       break
+        """
+        if not root: return
+
+        # warning: if root is None,
+        # [None] will trigger while loop
+        stack = [root]
+        print(stack)
+        while stack:
+            node = stack.pop()
+            if node.right: stack.append(node.right)
+            if node.left: stack.append(node.left)
+
+            node.left = None
+            if stack:
+                node.right = stack[-1]
+            else:
+                node.right = None
+            # <- breakpoint
+
     r_child = None
     def flatten(self, root):
         """
-        :type root: TreeNode
-    D    :rtype: void Do not return anything, modify root in-place instead.
+        Post-order
         """
-
-        if root is None:
-            return
+        if root is None: return
 
         # post-order traversal
         self.flatten(root.right)
@@ -44,6 +71,23 @@ class Solution(object):
         root.left = None
         root.right = self.r_child
         self.r_child = root
+
+
+    last = None
+    def flatten(self, root: TreeNode) -> None:
+        """
+        Pre-order
+        """
+        if not root: return
+
+        if self.last:
+            self.last.left = None
+            self.last.right = root
+
+        self.last = root
+        right = root.right
+        self.flatten(root.left)
+        self.flatten(right)
 
 solver = Solution()
 solver.flatten(root)

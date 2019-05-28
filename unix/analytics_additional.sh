@@ -4,3 +4,4 @@ pip install emcee
 pip install xgboost==0.80
 pip install MySQL-python
 conda install -c conda-forge hyperopt
+conda install h5py

@@ -48,6 +48,7 @@ SVM classifier can be expressed in a linear combination of **inner products**, p
 
 #### Comparison to Logistic Regression
 ![alt-text](assets/svm_vs_logistic.png)
+* Recall logistic loss: `- y log (y_hat) + (1 - y) log (1 - y_hat) `
 * Pro:
   - Better then data are separable. LR (without regularization) breaks down
 * Con:

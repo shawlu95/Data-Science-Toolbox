@@ -1,5 +1,6 @@
 # environment for scikit-learn, xgboost, data exploration
 
+# export PATH="/Users/shawlu/Documents/Anaconda/anaconda3/bin:$PATH"
 # conda env create -f analytics.yml
 # conda env update -f analytics.yml
 # conda remove --name analytics --all
@@ -17,10 +18,10 @@ dependencies:
   - scikit-learn
   # - lightgbm
   # - py-xgboost
-  - shap
-  - eli5
-  - pydot
-  - plotly
+  # - shap
+  # - eli5
+  # - pydot
+  # - plotly
   - matplotlib
   - sympy
   - sqlalchemy

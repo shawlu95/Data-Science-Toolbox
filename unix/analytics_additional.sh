@@ -7,3 +7,4 @@ pip install xgboost==0.80
 # pip install MySQL-python not working for python3
 conda install -c conda-forge hyperopt
 conda install h5py
+pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
